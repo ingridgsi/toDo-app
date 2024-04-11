@@ -68,14 +68,12 @@ function ToDoEdit({ task, sortedTasks }) {
         ></input>
         <div className="flex text-custom-baseTextColor  flex-row items-center justify-center gap-0">
           <div className="focus:outline-none  focus:ring  bg-custom-bgButton hover:bg-custom-bgButtonHover py-[2.1px] px-2 text-custom-baseTextColor mr-3 rounded-[8px] gap-1 flex items-center  drop-shadow-md">
-            <IoSaveOutline />
-            <button className="" type="submit">
-              Save
-            </button>
+            <IoSaveOutline onClick={handleEdit} />
+            <button className="hidden sm:inline-block">Save</button>
           </div>
           <div className=" focus:outline-none  focus:ring   bg-custom-bgButton hover:bg-custom-bgButtonHover  py-[2.1px] px-2 text-custom-baseTextColor mr-3 rounded-[8px] gap-1 flex items-center  drop-shadow-md">
-            <IoIosArrowRoundBack />
-            <button onClick={() => handleToggleEdit(task.id)}>Cancel</button>
+            <IoIosArrowRoundBack onClick={() => handleToggleEdit(task.id)} />
+            <button className="hidden sm:inline-block">Cancel</button>
           </div>
         </div>
       </form>
