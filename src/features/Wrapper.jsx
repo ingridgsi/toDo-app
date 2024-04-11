@@ -43,8 +43,8 @@ function Wrapper() {
             </div>
           </div>
         </Container>
-        <Footer />
       </div>
+      <Footer />
       <Toaster
         position="top-center"
         toastOptions={{
