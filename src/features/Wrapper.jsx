@@ -23,7 +23,7 @@ function Wrapper() {
 
   return (
     <>
-      <div className="bg-custom-bgColor h-96">
+      <div className="bg-custom-bgColor">
         <div>
           <Header />
           <Container>
@@ -54,8 +54,8 @@ function Wrapper() {
             },
           }}
         />
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 }
