@@ -47,7 +47,7 @@ function ToDoEdit({ task, sortedTasks }) {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
