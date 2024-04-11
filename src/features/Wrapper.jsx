@@ -23,7 +23,7 @@ function Wrapper() {
 
   return (
     <>
-      <div className="bg-custom-bgColor h-screen">
+      <div className="bg-custom-bgColor h-full">
         <Header />
         <Container>
           <ToDoInput />
@@ -43,8 +43,8 @@ function Wrapper() {
             </div>
           </div>
         </Container>
+        <Footer />
       </div>
-      <Footer />
       <Toaster
         position="top-center"
         toastOptions={{
