@@ -22,14 +22,14 @@ function ToDoList({ sortedTasks, sortBy, tasks }) {
 
   if (sortBy === "Completed" && !sortedTasks.length)
     return (
-      <div className=" text-custom-baseTextColor drop-shadow flex items-center justify-center border-none rounded-[5px] overflow-y-auto  px-7 pb-20 pt-8 h-[35rem] text-2xl  ">
+      <div className=" text-custom-baseTextColor drop-shadow flex items-center justify-center border-none rounded-[5px] overflow-y-auto  px-7 pb-20 pt-8 text-2xl h-auto ">
         <p>You haven&apos;t completed any task yet.</p>
       </div>
     );
 
   if (sortBy === "Pending" && !sortedTasks.length)
     return (
-      <div className="text-custom-baseTextColor drop-shadow flex items-center justify-center border-none rounded-[5px] overflow-y-auto px-7 pb-20 pt-8 h-[35rem] text-2xl">
+      <div className="text-custom-baseTextColor drop-shadow flex items-center justify-center border-none rounded-[5px] overflow-y-auto px-7 pb-20 pt-8 h-auto text-2xl">
         <p className="text-light-baseTextColor text-center">
           You have any task pending.
         </p>
@@ -39,11 +39,11 @@ function ToDoList({ sortedTasks, sortBy, tasks }) {
   return (
     <>
       {!sortedTasks.length ? (
-        <div className="text-custom-baseTextColor text-center drop-shadow flex items-center justify-center border-none rounded-[5px] overflow-y-auto px-7 pb-20 pt-8 h-[35rem] text-2xl">
+        <div className="text-custom-baseTextColor text-center drop-shadow flex items-center justify-center border-none rounded-[5px] overflow-y-auto px-7 pb-20 pt-8 h-auto text-2xl">
           <p>Start adding your tasks!</p>
         </div>
       ) : (
-        <div className=" flex flex-col gap-[0.5rem] drop-shadow border-none rounded-[5px] overflow-y-auto pb-5  h-[35rem] ">
+        <div className=" flex flex-col gap-[0.5rem] drop-shadow border-none rounded-[5px] overflow-y-auto pb-5  h-auto ">
           {sortedTasks?.map((task) =>
             task.isEditing ? (
               <ToDoEdit key={task.id} task={task} sortedTasks={sortedTasks} />

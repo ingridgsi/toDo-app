@@ -82,7 +82,7 @@ function Stats() {
       <div className="  grid grid-cols-2  gap-2 items-center ">
         {data.map((item) => (
           <div
-            key={item.index}
+            key={item.label}
             className="flex flex-col items-center justify-center hover:drop-shadow-md hover:cursor-pointer bg-custom-bgInput  drop-shadow-sm rounded-[6px] px-5 py-3 "
           >
             <p className="text-custom-baseTextColor font-semibold">
