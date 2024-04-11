@@ -22,14 +22,14 @@ function ToDoList({ sortedTasks, sortBy, tasks }) {
 
   if (sortBy === "Completed" && !sortedTasks.length)
     return (
-      <div className=" text-custom-baseTextColor drop-shadow flex items-center justify-center border-none rounded-[5px] overflow-y-auto  px-7 pb-20 pt-8 text-2xl h-auto ">
+      <div className=" text-custom-baseTextColor drop-shadow flex items-center justify-center border-none rounded-[5px] overflow-y-auto  px-7 pb-20 pt-8 text-lg h-auto ">
         <p>You haven&apos;t completed any task yet.</p>
       </div>
     );
 
   if (sortBy === "Pending" && !sortedTasks.length)
     return (
-      <div className="text-custom-baseTextColor drop-shadow flex items-center justify-center border-none rounded-[5px] overflow-y-auto px-7 pb-20 pt-8 h-auto text-2xl">
+      <div className="text-custom-baseTextColor drop-shadow flex items-center justify-center border-none rounded-[5px] overflow-y-auto px-7 pb-20 pt-8 h-auto text-lg">
         <p className="text-light-baseTextColor text-center">
           You have any task pending.
         </p>
@@ -39,7 +39,7 @@ function ToDoList({ sortedTasks, sortBy, tasks }) {
   return (
     <>
       {!sortedTasks.length ? (
-        <div className="text-custom-baseTextColor text-center drop-shadow flex items-center justify-center border-none rounded-[5px] overflow-y-auto px-7 pb-20 pt-8 h-auto text-2xl">
+        <div className="text-custom-baseTextColor text-center drop-shadow flex items-center justify-center border-none rounded-[5px] overflow-y-auto px-7 pb-20 pt-8 h-auto text-lg">
           <p>Start adding your tasks!</p>
         </div>
       ) : (
