@@ -5,11 +5,9 @@ import { IoSaveOutline } from "react-icons/io5";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { closeEdit, toggleEdit } from "./toDoSlice";
 import toast from "react-hot-toast";
-import { useDarkMode } from "../07-dark-mode/DarkModeContext";
 
 function ToDoEdit({ task, sortedTasks }) {
   const [updatedTask, setUpdatedTask] = useState(task.taskName);
-  const { isDarkMode } = useDarkMode();
 
   // toast({
   //   style: {

@@ -43,14 +43,14 @@ function ToDoList({ sortedTasks, sortBy, tasks }) {
           <p>Start adding your tasks!</p>
         </div>
       ) : (
-        <div className=" flex flex-col gap-[0.5rem] drop-shadow border-none rounded-[5px] overflow-y-auto pb-5  h-auto ">
+        <div className="flex flex-col gap-[0.5rem] drop-shadow border-none rounded-[5px] overflow-x-hidden pb-5 h-[10rem]  sm:h-[35rem] overflow-y-auto">
           {sortedTasks?.map((task) =>
             task.isEditing ? (
               <ToDoEdit key={task.id} task={task} sortedTasks={sortedTasks} />
             ) : (
               <>
                 <ul
-                  className="rounded-[8px] flex flex-row items-center gap-4 justify-between px-4  bg-custom-bgInput mr-3"
+                  className="rounded-[8px] flex flex-row items-center gap-4 justify-between px-4  bg-custom-bgInput mr-3 "
                   // className={`flex flex-row items-center gap-4 justify-between ${
                   //   index === sortedTasks.length - 1
                   //     ? ""
@@ -59,7 +59,7 @@ function ToDoList({ sortedTasks, sortBy, tasks }) {
                 >
                   <li
                     key={task.id}
-                    className="flex items-center gap-4 py-4 text-custom-baseTextColor "
+                    className="flex items-center gap-4 py-4 text-custom-baseTextColor mb-0.2 "
                   >
                     <div className=" relative flex flex-row gap-2 justify-center">
                       <input
