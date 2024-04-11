@@ -72,6 +72,7 @@ function AlertDialogExample({ sortBy, setSortBy, tasks }) {
           <AlertDialogContent
             color={isDarkMode ? "white" : ""}
             bg={isDarkMode ? "modal.300" : "modal.200"}
+            mx="4rem"
           >
             <AlertDialogHeader fontSize="md" fontWeight="bold">
               Delete all Tasks
