@@ -23,7 +23,7 @@ function Wrapper() {
 
   return (
     <>
-      <div className="bg-custom-bgColor h-fit">
+      <div className="bg-custom-bgColor h-dvh">
         <div>
           <Header />
           <Container>
