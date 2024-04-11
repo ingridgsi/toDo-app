@@ -23,7 +23,7 @@ function Wrapper() {
 
   return (
     <>
-      <div className="bg-custom-bgColor h-auto">
+      <div className="bg-custom-bgColor h-full">
         <Header />
         <Container>
           <ToDoInput />
