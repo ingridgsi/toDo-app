@@ -48,16 +48,16 @@ function Wrapper() {
         <div>
           <Footer />
         </div>
+        <Toaster
+          position="top-center"
+          toastOptions={{
+            style: {
+              background: isDarkMode ? "#3f3f3f" : "white",
+              color: isDarkMode ? "white" : "",
+            },
+          }}
+        />
       </div>
-      <Toaster
-        position="top-center"
-        toastOptions={{
-          style: {
-            background: isDarkMode ? "#3f3f3f" : "white",
-            color: isDarkMode ? "white" : "",
-          },
-        }}
-      />
     </>
   );
 }
