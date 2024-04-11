@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light Mode */
+  --bgColor-light: #fff2ee;
+  --bgFooter-light: #f1cb9f3c;
+  --bgInput-light: #fff;
+  --bgTimer-light: #eee;
+  --bgButton-light: #c7dbd0;
+  --bgButtonHover-light: #9bb6a7;
+  --checkMarkBorder-light: #f37260;
+  --checkMark-light: #8ca87c;
+  --ringFocus-light: #789987;
+  --headingsColor-light: #544230;
+  --baseTextColor-light: #303030eb;
+  --textFooterHeader-light: #c64b3b;
+
+  /* Dark Mode */
+  --bgColor-dark: #222;
+  --bgFooter-dark: #333;
+  --bgInput-dark: #333;
+  --bgTimer-dark: #333;
+  --bgButton-dark: #555;
+  --bgButtonHover-dark: #46454b;
+  --checkMarkBorder-dark: #ffcc00;
+  --checkMark-dark: #66ff66;
+  --ringFocus-dark: #00ffcc;
+  --headingsColor-dark: #ddd;
+  --baseTextColor-dark: #aaa;
+  --textFooterHeader-dark: #fff;
+}
+
+html.light {
+  --bgColor: var(--bgColor-light);
+  --bgFooter: var(--bgFooter-light);
+  --bgInput: var(--bgInput-light);
+  --bgTimer: var(--bgTimer-light);
+  --bgButton: var(--bgButton-light);
+  --bgButtonHover: var(--bgButtonHover-light);
+  --checkMarkBorder: var(--checkMarkBorder-light);
+  --checkMark: var(--checkMark-light);
+  --ringFocus: var(--ringFocus-light);
+  --headingsColor: var(--headingsColor-light);
+  --baseTextColor: var(--baseTextColor-light);
+  --textFooterHeader: var(--textFooterHeader-light);
+}
+
+html.dark {
+  --bgColor: var(--bgColor-dark);
+  --bgFooter: var(--bgFooter-dark);
+  --bgInput: var(--bgInput-dark);
+  --bgTimer: var(--bgTimer-dark);
+  --bgButton: var(--bgButton-dark);
+  --bgButtonHover: var(--bgButtonHover-dark);
+  --checkMarkBorder: var(--checkMarkBorder-dark);
+  --checkMark: var(--checkMark-dark);
+  --ringFocus: var(--ringFocus-dark);
+  --headingsColor: var(--headingsColor-dark);
+  --baseTextColor: var(--baseTextColor-dark);
+  --textFooterHeader: var(--textFooterHeader-dark);
+}
+
+.custom-icon {
+  fill: currentColor; /* Ensures the icon color inherits the text color */
+  font-weight: bold;
+}
+
+/* Apply hover effect to the custom-icon class */
+.custom-icon-sun:hover {
+  color: yellow;
+}
+
+.custom-icon-moon:hover {
+  color: #f37260;
+  font: bold;
+}
