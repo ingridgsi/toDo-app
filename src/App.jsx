@@ -6,9 +6,7 @@ function App() {
   return (
     <>
       <DarkModeProvider>
-        <div className="bg-custom-bgColor h-screen">
-          <Wrapper />
-        </div>
+        <Wrapper />
       </DarkModeProvider>
     </>
   );

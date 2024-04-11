@@ -23,37 +23,40 @@ function Wrapper() {
 
   return (
     <>
-      <div>
+      <div className="bg-custom-bgColor min-h-screen flex flex-col ">
         <Header />
-        <Container>
-          <ToDoInput />
-          <Filter sortBy={sortBy} setSortBy={setSortBy} tasks={tasks} />
-          <div className="md:grid grid-cols-3 xl:grid-cols-4 gap-5 xl:text-base ">
-            <div className="md:col-span-2 xl:col-span-3">
-              <ToDoList
-                sortedTasks={sortedTasks}
-                sortBy={sortBy}
-                tasks={tasks}
+        <div className="flex-grow">
+          <main>
+            <Container>
+              <ToDoInput />
+              <Filter sortBy={sortBy} setSortBy={setSortBy} tasks={tasks} />
+              <div className="md:grid grid-cols-3 xl:grid-cols-4 gap-5 xl:text-base ">
+                <div className="md:col-span-2 xl:col-span-3">
+                  <ToDoList
+                    sortedTasks={sortedTasks}
+                    sortBy={sortBy}
+                    tasks={tasks}
+                  />
+                </div>
+                <div className="flex flex-col gap-4 justify-start mb-4  ">
+                  <Stats />
+                  <Timer />
+                  <Quotes />
+                </div>
+              </div>
+              <Toaster
+                position="top-center"
+                toastOptions={{
+                  style: {
+                    background: isDarkMode ? "#3f3f3f" : "white",
+                    color: isDarkMode ? "white" : "",
+                  },
+                }}
               />
-            </div>
-            <div className="flex flex-col gap-4 justify-start mb-4  ">
-              <Stats />
-              <Timer />
-              <Quotes />
-            </div>
-          </div>
-        </Container>
+            </Container>
+          </main>
+        </div>
         <Footer />
-
-        <Toaster
-          position="top-center"
-          toastOptions={{
-            style: {
-              background: isDarkMode ? "#3f3f3f" : "white",
-              color: isDarkMode ? "white" : "",
-            },
-          }}
-        />
       </div>
     </>
   );
