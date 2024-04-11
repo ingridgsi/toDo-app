@@ -43,7 +43,11 @@ function ToDoList({ sortedTasks, sortBy, tasks }) {
           <p>Start adding your tasks!</p>
         </div>
       ) : (
-        <div className="flex flex-col gap-[0.5rem] drop-shadow border-none rounded-[5px] overflow-x-hidden pb-5 h-[10rem]  sm:h-[35rem] overflow-y-auto">
+        <div
+          className={`${
+            sortedTasks.length > 2 ? "h-[25rem] overflow-auto" : "h-[10rem] "
+          } flex flex-col gap-[0.5rem] drop-shadow border-none rounded-[5px] overflow-x-hidden pb-5  sm:h-[35rem] overflow-y-auto mb-5`}
+        >
           {sortedTasks?.map((task) =>
             task.isEditing ? (
               <ToDoEdit key={task.id} task={task} sortedTasks={sortedTasks} />
