@@ -28,7 +28,7 @@ A task management app where users can insert tasks to do, edit, delete and filte
 
 To set up the ToDoApp on your local machine, follow these instructions:
 
-- Clone the repository: 
+- Clone the repository: https://github.com/ingridgsi/toDo-app.git
 - Move to the project directory: cd to-do-app
 - Install necessary dependencies: npm install
 - Launch the development server: npm run dev
